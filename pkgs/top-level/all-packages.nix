@@ -299,6 +299,8 @@ with pkgs;
 
   vmTools = callPackage ../build-support/vm/default.nix { };
 
+  veles = callPackage ../development/tools/analysis/veles { };
+
   releaseTools = callPackage ../build-support/release/default.nix { };
 
   composableDerivation = callPackage ../../lib/composable-derivation.nix { };
